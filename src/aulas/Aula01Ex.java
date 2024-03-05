@@ -1,6 +1,5 @@
-package src.aulas;
+package aulas;
 
-import src.classes.Caneta;
 import src.classes.Livro;
 
 public class Aula01Ex {

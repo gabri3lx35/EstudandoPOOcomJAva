@@ -1,4 +1,4 @@
-package src.aulas;
+package aulas;
 
 import src.classes.Caneta;
 
