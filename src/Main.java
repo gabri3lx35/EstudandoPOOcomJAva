@@ -1,5 +1,5 @@
+import src.classes.Caneta;
+
 public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
-    }
+    //Estou estudando pela Main, Após termino do estudo, dou contro c no que eu fiz e jogo para um arquivo na pasta aulas
 }
