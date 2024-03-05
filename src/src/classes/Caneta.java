@@ -7,10 +7,18 @@ public class Caneta {
     private String cor;
     private float ponta;
     private int carga;
-    private boolean tampada;
+    private boolean tampada =true;
 
 
 
+
+    public  Caneta(String modelo, String cor, float ponta, int carga){
+        this.modelo = modelo;
+        this.cor = cor;
+        this.ponta = ponta;
+        this.carga = carga;
+
+    }
     public String getModelo(){
         return this.modelo;
     }

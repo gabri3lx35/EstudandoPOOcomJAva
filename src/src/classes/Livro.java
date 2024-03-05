@@ -1,12 +1,60 @@
 package src.classes;
 
 public class Livro {
-    public String nome;
-    public String autor;
-    public String genero;
-    public int paginas;
+    private String nome;
+    private String autor;
+    private String genero;
+    private int paginas;
     protected boolean aberto =false;
     private int paginaslidas=0;
+
+
+    public Livro(String nome, String autor, String genero, int paginas) {
+        this.nome = nome;
+        this.autor = autor;
+        this.genero = genero;
+        this.paginas = paginas;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+
+    public String getGenero() {
+        return genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+
+    public int getPaginas() {
+        return paginas;
+    }
+
+    public void setPaginas(int paginas) {
+        this.paginas = paginas;
+    }
+
+    public boolean isAberto() {
+        return aberto;
+    }
+
+    public void setAberto(boolean aberto) {
+        this.aberto = aberto;
+    }
 
     public  void abrirLivro(){
         this.aberto = true;
