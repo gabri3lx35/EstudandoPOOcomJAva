@@ -9,7 +9,7 @@ public class Aula01Ex {
         livro.nome = "Aventuras de gabriel";
         livro.genero = "Aventura";
         livro.paginas = 1256;
-        livro.aberto = false;
+        livro.abrirLivro();
         livro.status();
         livro.ler(1257);
         livro.status();

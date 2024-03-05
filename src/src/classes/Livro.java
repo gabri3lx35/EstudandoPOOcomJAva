@@ -5,9 +5,15 @@ public class Livro {
     public String autor;
     public String genero;
     public int paginas;
-    public boolean aberto;
+    protected boolean aberto =false;
     private int paginaslidas=0;
 
+    public  void abrirLivro(){
+        this.aberto = true;
+    }
+    public void fecharLivro(){
+        this.aberto = false;
+    }
     public void estudar(){
         if(this.aberto){
             System.out.println("Começando a estudar");
@@ -16,12 +22,17 @@ public class Livro {
         }
     }
 
-    public void ler(int QuantasPaginasForamLidas){
+    public int ler(int QuantasPaginasForamLidas){
+        if(!this.aberto){
+            System.out.println("Você não pode ler com o livro fechado");
+            return 1;
+        }
         if(QuantasPaginasForamLidas > this.paginas){
             this.paginaslidas = this.paginas;
         }else {
             this.paginaslidas = QuantasPaginasForamLidas;
         }
+        return 0;
     }
     public void status(){
         System.out.println("Nome do livro: "+this.nome);
