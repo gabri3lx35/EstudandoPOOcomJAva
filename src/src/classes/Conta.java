@@ -27,6 +27,11 @@ public class Conta {
         }
 
     }
+    public void fecharConta(){
+        if(this.saldo == 0 && this.status == true){
+            this.status = false;
+        }
+    }
     public void pagarTaxa(){
         if(this.status){
             if(this.saldo > this.taxaConta){
@@ -47,7 +52,7 @@ public class Conta {
         System.out.println("Valor da taxa Mensal da conta: "+this.taxaConta);
     }
     public void sacar(int valor){
-        if(this.saldo > valor){
+        if(this.saldo > valor && this.status == true){
            this.saldo = this.saldo - valor;
         }else {
             System.out.println("Sua conta esta fechada "+this.nomeDono+" não pode sacar uma valor com a conta fechada");
