@@ -2,7 +2,7 @@ package aulas;
 
 import interfaces.ControleRemoto;
 
-public class Aula3 {
+public class Aula03 {
     public static void main(String[] args) {
         ControleRemoto controle1 = new src.classes.ControleRemoto();
         controle1.ligar();
