@@ -1,6 +1,6 @@
 package src.classes;
 
-public class Pessoa {
+public abstract class Pessoa {
     private String nome;
     private int idade;
     private String sexo;
@@ -56,5 +56,14 @@ public class Pessoa {
        }else {
            this.sexo = "ERROR, sexo não definido";
        }
+    }
+
+    @Override
+    public String toString() {
+        return "Pessoa{" +
+                "nome='" + nome + '\'' +
+                ", idade=" + idade +
+                ", sexo='" + sexo + '\'' +
+                '}';
     }
 }
